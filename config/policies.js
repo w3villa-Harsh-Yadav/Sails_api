@@ -19,7 +19,11 @@ module.exports.policies = {
 
   // '*': true,
   TodoController:{
-    'createTask':'auth'
+
+    '*':'auth',
+
+    'getAllTask':true
+
   }
 
 };

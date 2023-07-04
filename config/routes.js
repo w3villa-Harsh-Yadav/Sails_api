@@ -22,7 +22,9 @@ module.exports.routes = {
   '/': { view: 'pages/homepage' },
 
   'POST /task' : 'TodoController/createTask',
-  'GET /task' : 'TodoController/getAllTask'
+  'GET /task' : 'TodoController/getAllTask',
+  'PATCH /task/:uuid' : 'TodoController/updateTask',
+  'DELETE /task/:uuid' : 'TodoController/deleteTask',
 
 
   /***************************************************************************
